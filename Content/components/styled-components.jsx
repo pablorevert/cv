@@ -17,7 +17,6 @@ const BlueTitle = styled.h1`
 		}
 	}
 `;
-
 export function StyledComponentsDemo() {
 	return (
 		<Fragment>
