@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
+
 const BlueTitle = styled.h1`
 	color: #222;
 	font-family: Helvetica, 'sans-serif';
@@ -17,6 +18,7 @@ const BlueTitle = styled.h1`
 		}
 	}
 `;
+
 export function StyledComponentsDemo() {
 	return (
 		<Fragment>
