@@ -1,21 +1,24 @@
 ﻿import React from 'react';
-import MenuComponent from './menu.jsx';
 import HeaderComponent from './header.jsx';
+import { Router, Route, Switch, hasHistory } from "react-router-dom";
 import CVListComponent from './cv-list.jsx'
+import IndexLayout from './index.jsx'
+
 
 export default class LayoutComponent extends React.Component {
     render() {
         return (
             <div className="container">
-                <MenuComponent />
+                <HeaderComponent />                
                 <div className="content">
-                    <HeaderComponent />
-                    <div className="body">
-                        <h4 className="commentBox"></h4>
-                        <CVListComponent />
-                    </div>
+                        <Switch>
+                            <Route path="/cvList" component={CVListComponent} />
+                            <Route path="/" component={IndexLayout} />
+                        </Switch>
                 </div>
             </div>
         );
     }
+
+    
 }
