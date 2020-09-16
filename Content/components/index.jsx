@@ -2,13 +2,11 @@
 
 
 
-export default class IndexLayout extends React.Component {
-    
-
+export default class IndexLayout extends React.Component {  
     render() {
         return (
             <div>
-                init
+                index
             </div>
         );
     }

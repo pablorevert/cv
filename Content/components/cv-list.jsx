@@ -22,7 +22,7 @@ export default class CVListComponent extends React.Component {
     }
 
     goToCv(id) {
-        console.log(id +'ok')
+        this.props.history.push('/cv/' + id);
     }
 
     render() {
