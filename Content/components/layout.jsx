@@ -1,6 +1,5 @@
 ﻿import React from 'react';
 import HeaderComponent from './header.jsx';
-import MenuComponent from './menu.jsx';
 import { Link, BrowserRouter, Route, Switch, StaticRouter, Redirect } from "react-router-dom";
 import CVComponent from './cv.jsx';
 import CVListComponent from './cv-list.jsx';
@@ -11,7 +10,16 @@ export default class LayoutComponent extends React.Component {
         const app = (
             <div className="container">
                 <HeaderComponent />
-                <MenuComponent />
+                <div className="menu">
+                    <ul>
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/cvList">Comments Demo</Link>
+                        </li>
+                    </ul>
+                </div>
                 <div className="content">
                     <Switch>
                         <Route path="/cv/:id" component={CVComponent} />

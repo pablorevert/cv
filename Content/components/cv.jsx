@@ -13,8 +13,6 @@ export default class CVComponent extends React.Component {
                 'updateDate': '20/08/2019',
                 'id': 36
         };
-
-        console.log(this)
     }
 
     goBack() {
