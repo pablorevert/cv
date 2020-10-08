@@ -1,8 +1,9 @@
-﻿import React from 'react';
+import React from 'react';
 import HeaderComponent from './header.jsx';
 import { Link, BrowserRouter, Route, Switch, StaticRouter, Redirect } from "react-router-dom";
 import CVComponent from './cv.jsx';
 import CVListComponent from './cv-list.jsx';
+import ReactJssDemo from './react-jss.jsx';
 import IndexLayout from './index.jsx';
 
 export default class LayoutComponent extends React.Component {
@@ -19,6 +20,7 @@ export default class LayoutComponent extends React.Component {
                             <Link to="/cvList">Comments Demo</Link>
                         </li>
                     </ul>
+                    <ReactJssDemo />
                 </div>
                 <div className="content">
                     <Switch>
