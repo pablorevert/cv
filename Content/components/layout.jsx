@@ -1,8 +1,10 @@
 ﻿import React from 'react';
 import HeaderComponent from './header.jsx';
 import { Link, BrowserRouter, Route, Switch, StaticRouter, Redirect } from "react-router-dom";
-import CVListComponent from './cv-list.jsx'
+import CvPage from './pages/cvs.jsx'
 import IndexLayout from './index.jsx'
+import { ThemeProvider } from 'styled-components';
+import theme from './themes/aqua.jsx'
 
 
 export default class LayoutComponent extends React.Component {
@@ -10,12 +12,14 @@ export default class LayoutComponent extends React.Component {
         const app = (
             <div className="container">
                 <HeaderComponent />
-                <div className="content">
-                    <Switch>
-                        <Route path="/cvList" component={CVListComponent} />
-                        <Route path="/" component={IndexLayout} />
-                    </Switch>
-                </div>
+                <ThemeProvider theme={theme}>
+                    <div className="content">
+                        <Switch>
+                            <Route path="/cvs" component={CvPage} />
+                            <Route path="/" component={IndexLayout} />
+                        </Switch>
+                    </div>
+                </ThemeProvider>
             </div>
         );
 

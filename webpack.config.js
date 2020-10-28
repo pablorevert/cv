@@ -1,7 +1,9 @@
+/// <binding AfterBuild='Run - Development' />
 const path = require('path');
 const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
+	watch: false,
 	entry: './Content/components/expose-components.js',
 	output: {
 		filename: '[name].[contenthash:8].js',
