@@ -8,7 +8,7 @@ export default class IndexLayout extends React.Component {
     render() {
         return (
             <div>
-                init
+                Soy la página principal!
             </div>
         );
     }

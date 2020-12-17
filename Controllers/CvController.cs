@@ -12,8 +12,8 @@ namespace SampleApp.Controllers
         {
             var items = new {
                 items = new[] {
-                    new { name = "Pablo" },
-                    new { name = "Mirlet" }
+                    new { name = "Pablo", Age = 7 },
+                    new { name = "Mirlet", Age = 7 }
                 }
             };
             return Json(items);

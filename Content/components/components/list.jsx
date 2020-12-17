@@ -43,8 +43,8 @@ export default class CardList extends React.Component {
         else 
             return <div>
             {
-                this.state.items.map((cv, index) =>
-                    <Item key={index} value={cv} index={index}></Item>)  
+                this.state.items.map((item, index) =>
+                    <Item key={index} value={item} index={index}></Item>)  
             }
             </div>;
     }

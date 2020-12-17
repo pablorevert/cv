@@ -4,7 +4,7 @@ import { Link, BrowserRouter, Route, Switch, StaticRouter, Redirect } from "reac
 import CvPage from './pages/cvs.jsx'
 import IndexLayout from './index.jsx'
 import { ThemeProvider } from 'styled-components';
-import theme from './themes/aqua.jsx'
+import theme from './themes/default.jsx'
 
 
 export default class LayoutComponent extends React.Component {

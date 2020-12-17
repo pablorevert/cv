@@ -14,7 +14,7 @@ const H2 = styled.h2`
 `;
 
 let CvCard = props =>
-    <Div className={"cv-card"} m="30px">
+    <Div className={"cv-card"} >
         <H2>{props.value.name}</H2>
     </Div>;
 

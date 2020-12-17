@@ -1,4 +1,4 @@
-/// <binding AfterBuild='Run - Development' />
+/// <binding AfterBuild='Run - Development' ProjectOpened='Watch - Development' />
 const path = require('path');
 const ManifestPlugin = require('webpack-manifest-plugin');
 
